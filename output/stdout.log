@@ -1,0 +1,43 @@
+
+Collecting tasks from: tasks.py
+================== Running: [96morder_robots_from_robot_spare_bin[0m ==================
+Order failed, retrying...
+Order failed, retrying...
+Order successful
+Order failed, retrying...
+Order failed, retrying...
+Order successful
+Order failed, retrying...
+Order failed, retrying...
+Order successful
+[96morder_robots_from_robot_spare_bin[0m status: [91mFAIL
+[0m[91m
+Page.click: Target page, context or browser has been closed
+[0m========== Full Traceback (running [96morder_robots_from_robot_spare_bin[0m) ==========
+[91mTraceback (most recent call last):
+  File "C:\ProgramData\robocorp\ht\6011110_b1f3c24_1c0bc041\lib\site-packages\robocorp\tasks\_commands.py", line 453, in run
+    result = task.run(**kwargs)
+  File "C:\ProgramData\robocorp\ht\6011110_b1f3c24_1c0bc041\lib\site-packages\robocorp\tasks\_task.py", line 57, in run
+    return self.method(**kwargs)
+  File "c:\Users\MaitreyeeMitra\Desktop\Vscode\Automation-Certification-Level-II-Build-a-robot\tasks.py", line 25, in order_robots_from_robot_spare_bin
+    process_orders()
+  File "c:\Users\MaitreyeeMitra\Desktop\Vscode\Automation-Certification-Level-II-Build-a-robot\tasks.py", line 55, in process_orders
+    fill_the_form(order)
+  File "c:\Users\MaitreyeeMitra\Desktop\Vscode\Automation-Certification-Level-II-Build-a-robot\tasks.py", line 92, in fill_the_form
+    page.click("css=#order")
+  File "C:\ProgramData\robocorp\ht\6011110_b1f3c24_1c0bc041\lib\site-packages\playwright\sync_api\_generated.py", line 9671, in click
+    self._sync(
+  File "C:\ProgramData\robocorp\ht\6011110_b1f3c24_1c0bc041\lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+  File "C:\ProgramData\robocorp\ht\6011110_b1f3c24_1c0bc041\lib\site-packages\playwright\_impl\_page.py", line 777, in click
+    return await self._main_frame.click(**locals_to_params(locals()))
+  File "C:\ProgramData\robocorp\ht\6011110_b1f3c24_1c0bc041\lib\site-packages\playwright\_impl\_frame.py", line 488, in click
+    await self._channel.send("click", locals_to_params(locals()))
+  File "C:\ProgramData\robocorp\ht\6011110_b1f3c24_1c0bc041\lib\site-packages\playwright\_impl\_connection.py", line 59, in send
+    return await self._connection.wrap_api_call(
+  File "C:\ProgramData\robocorp\ht\6011110_b1f3c24_1c0bc041\lib\site-packages\playwright\_impl\_connection.py", line 514, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.click: Target page, context or browser has been closed
+
+[0m================================================================================
+Robocorp Log (html): c:\Users\MaitreyeeMitra\Desktop\Vscode\Automation-Certification-Level-II-Build-a-robot\output\log.html
